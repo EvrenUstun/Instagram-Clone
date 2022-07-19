@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
         static let cornerRadius: CGFloat = 8.0
     }
     
-    
     private var usernameEmailField: UITextField = {
         let field = UITextField()
         field.placeholder = "Username or Email"
@@ -200,7 +199,33 @@ class LoginViewController: UIViewController {
               let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
                   return
               }
+        
         // login functionality
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"), usernameEmail.contains(".") {
+            // email
+            email = usernameEmail
+        }else {
+            // username
+            username = usernameEmail
+        }
+        
+        AuthManager.shared.loginUser(username: username,email: email,password: password){ succes in
+            DispatchQueue.main.async {
+                if succes{
+                    // user logged in
+                    self.dismiss(animated: true, completion: nil)
+                }else{
+                    // error occured
+                    let alert = UIAlertController(title: "Log In Error", message: "We were unable to log you in.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
+        
     }
     
     @objc private func didTapTermsButton() {
@@ -223,7 +248,8 @@ class LoginViewController: UIViewController {
     
     @objc private func didTapCreateAccountButton() {
         let vc = RegistrationViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
     
 }
