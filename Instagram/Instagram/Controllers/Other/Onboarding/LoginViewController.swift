@@ -200,7 +200,7 @@ class LoginViewController: UIViewController {
                   return
               }
         
-        // login functionality
+        // login functionality  
         var username: String?
         var email: String?
         
