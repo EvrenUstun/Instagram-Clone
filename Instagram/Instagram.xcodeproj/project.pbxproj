@@ -42,6 +42,9 @@
 		B1B1F1A1288C6C9D000AE04F /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1F1A0288C6C9D000AE04F /* IGFeedPostHeaderTableViewCell.swift */; };
 		B1B1F1A3288C6CCC000AE04F /* IGFeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1F1A2288C6CCC000AE04F /* IGFeedPostActionTableViewCell.swift */; };
 		B1B1F1A5288C6CFC000AE04F /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1F1A4288C6CFC000AE04F /* IGFeedPostGeneralTableViewCell.swift */; };
+		B1E5DF9328A78E49008E6EC8 /* NoNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5DF9228A78E49008E6EC8 /* NoNotificationView.swift */; };
+		B1E5DF9628A79317008E6EC8 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5DF9528A79317008E6EC8 /* NotificationFollowEventTableViewCell.swift */; };
+		B1E5DF9828A7933C008E6EC8 /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5DF9728A7933C008E6EC8 /* NotificationLikeEventTableViewCell.swift */; };
 		B1FB8E0B2893FBEB003A0882 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB8E0A2893FBEB003A0882 /* Models.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +88,9 @@
 		B1B1F1A0288C6C9D000AE04F /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		B1B1F1A2288C6CCC000AE04F /* IGFeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
 		B1B1F1A4288C6CFC000AE04F /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		B1E5DF9228A78E49008E6EC8 /* NoNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationView.swift; sourceTree = "<group>"; };
+		B1E5DF9528A79317008E6EC8 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		B1E5DF9728A7933C008E6EC8 /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		B1FB8E0A2893FBEB003A0882 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +161,7 @@
 				B1B1F19C288C6A6F000AE04F /* Cells */,
 				B15A8A742886886100CB6CC5 /* Storyboards */,
 				B15A8A65288687D300CB6CC5 /* Assets.xcassets */,
+				B1E5DF9228A78E49008E6EC8 /* NoNotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +245,7 @@
 		B1B1F19C288C6A6F000AE04F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B1E5DF9428A792B9008E6EC8 /* Notifications */,
 				B1B1F19F288C6C6E000AE04F /* Home Feed */,
 				B13910C6288F20F8001A2C09 /* FormTableViewCell.swift */,
 				B13910C9288F2911001A2C09 /* PhotoCollectionViewCell.swift */,
@@ -255,6 +263,15 @@
 				B1B1F1A4288C6CFC000AE04F /* IGFeedPostGeneralTableViewCell.swift */,
 			);
 			path = "Home Feed";
+			sourceTree = "<group>";
+		};
+		B1E5DF9428A792B9008E6EC8 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5DF9528A79317008E6EC8 /* NotificationFollowEventTableViewCell.swift */,
+				B1E5DF9728A7933C008E6EC8 /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		BB5029C444A594B9213ED47F /* Frameworks */ = {
@@ -398,6 +415,7 @@
 				B15A8A832886899700CB6CC5 /* RegistrationViewController.swift in Sources */,
 				B1B1F1A1288C6C9D000AE04F /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				B15A8A9128868A2900CB6CC5 /* PostEditorViewController.swift in Sources */,
+				B1E5DF9628A79317008E6EC8 /* NotificationFollowEventTableViewCell.swift in Sources */,
 				B15B89C32886956E00A2AD74 /* StorageManager.swift in Sources */,
 				B153EA742894179200B0408E /* UserFollowTableViewCell.swift in Sources */,
 				B1FB8E0B2893FBEB003A0882 /* Models.swift in Sources */,
@@ -408,10 +426,12 @@
 				B15B89BF2886948400A2AD74 /* DatabaseManager.swift in Sources */,
 				B15A8A61288687D000CB6CC5 /* HomeViewController.swift in Sources */,
 				B13910CA288F2911001A2C09 /* PhotoCollectionViewCell.swift in Sources */,
+				B1E5DF9328A78E49008E6EC8 /* NoNotificationView.swift in Sources */,
 				B1B1F19E288C6AC4000AE04F /* IGFeedPostTableViewCell.swift in Sources */,
 				B15A8A8F28868A0200CB6CC5 /* SearchResultViewController.swift in Sources */,
 				B15A8A812886898C00CB6CC5 /* LoginViewController.swift in Sources */,
 				B1B1F1A5288C6CFC000AE04F /* IGFeedPostGeneralTableViewCell.swift in Sources */,
+				B1E5DF9828A7933C008E6EC8 /* NotificationLikeEventTableViewCell.swift in Sources */,
 				B169F43028869F9A00D8C9D2 /* Extensions.swift in Sources */,
 				B13910CC288F298A001A2C09 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				B15A8A8D288689F700CB6CC5 /* SearchViewController.swift in Sources */,
